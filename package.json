@@ -15,6 +15,8 @@
     "bootstrap": "4.3.1",
     "react": "16.8.3",
     "react-dom": "16.8.3",
+    "react-loading-skeleton": "^2.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.5"
   },
   "devDependencies": {
@@ -30,5 +32,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sparragus/platzi-badges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sparragus/platzi-badges/issues"
+  },
+  "homepage": "https://github.com/Sparragus/platzi-badges#readme",
+  "description": ""
 }

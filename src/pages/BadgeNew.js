@@ -1,23 +1,22 @@
-import React from 'react';
+import React from "react";
 
-import './styles/BadgeNew.css';
-import header from '../images/badge-header.svg';
-import Badge from '../components/Badge';
-import BadgeForm from '../components/BadgeForm';
-import Navbar from '../components/Navbar';
+import "./styles/BadgeNew.css";
+import header from "../images/badge-header.svg";
+import Badge from "../components/Badge";
+import BadgeForm from "../components/BadgeForm";
 
 class BadgeNew extends React.Component {
   state = {
     form: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      jobTitle: '',
-      twitter: '',
+      firstName: "",
+      lastName: "",
+      email: "",
+      jobTitle: "",
+      twitter: "",
     },
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
       form: {
         ...this.state.form,
@@ -28,8 +27,7 @@ class BadgeNew extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <div className="BadgeNew__hero">
           <img className="img-fluid" src={header} alt="Logo" />
         </div>
@@ -43,7 +41,7 @@ class BadgeNew extends React.Component {
                 twitter={this.state.form.twitter}
                 jobTitle={this.state.form.jobTitle}
                 email={this.state.form.email}
-                avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"
+                avatarUrl="https://image.flaticon.com/icons/png/512/2922/2922524.png"
               />
             </div>
 
@@ -55,7 +53,7 @@ class BadgeNew extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
